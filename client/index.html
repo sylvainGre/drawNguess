@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>draw N guess</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client.css">
+  </head>
+  <body>
+
+    <div id="timer">
+      <p id="timer__view"></p>
+    </div>
+
+    <p id="round__view"></p>
+
+    <div id="REGISTER"> 
+        <h1>Draw N guess</h1>
+        <p>Luchon edition</p>
+        <input type="text" name="name" id="name" autocomplete="off">
+        <br>
+        <br>
+        <button onclick="register()">Rejoindre</button>
+    </div>
+
+    <div id="WAITING">
+      <h1>En attente ...</h1>
+      <ul id="WAITING__user-list"></ul>
+      <button onclick="startGame()">Commencer la partie</button>
+    </div>
+
+    <div id="GUESS">
+      <h1>Trouve le mot dessiné</h1>
+      <p id="GUESS__word"></p>
+      <div id="GUESS__chat"></div>
+      
+      <form action="javascript:void(0);">
+        <input type="text" name="message" id="GUESS__input" autocomplete="off">
+        <button onclick="chatSend()" >Envoyer</button>
+      </form>
+
+    </div>
+
+    <div id="DRAW">
+      <h1>Au tableau !</h1>
+      <h2>Dessine le mot :</h2>
+      <p id="DRAW__word"></p>
+
+    </div>
+
+    <div id="RESULT">
+      <h1>Résultats</h1>
+      <table id="RESULT_table"></table>
+    </div>
+
+    <div id="CHOOSE">
+      <h1>Choix du mot à déssiner</h1>
+      <h2 id="CHOOSE__user-draw"></h2>
+      <div id="CHOOSE__words"></div>
+    </div>
+
+    <div id="PODIUM">
+      <h1>Fin de la partie</h1>
+      <table id="PODIUM__table"></table>
+    </div>
+
+  </body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
+</html>

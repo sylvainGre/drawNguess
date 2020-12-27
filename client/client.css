@@ -1,0 +1,94 @@
+body{
+    background-color: #2c3e50;
+    color : rgb(241, 241, 241);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+ul{
+    width: 70%;
+    text-align: left;
+}
+li{
+    font-size: 20px;
+    list-style: none;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+}
+
+
+#REGISTER{
+    display: none;
+}
+
+#WAITING{
+    display: none;
+}
+
+
+#GUESS{
+    display: none;
+}
+#GUESS__word{
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+#GUESS__chat{
+    overflow: auto;
+    text-align: left;
+    border: solid 0.5px whitesmoke;
+    padding: 3px;
+    margin-bottom: 5px;
+    height: 50vh;
+}
+
+#DRAW{
+    display: none;
+}
+
+#RESULT{
+    display: none;
+}
+
+#RESULT_table{
+    width: 100%;
+    font-size: 20px;
+}
+
+#CHOOSE{
+    display: none;
+}
+
+#PODIUM{
+    display: none;
+}
+
+#PODIUM__table{
+    width: 100%;
+    font-size: 20px;
+}
+
+button {
+	background-color:#1abc9c;
+	border-radius:28px;
+	border:1px solid #1abc9c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button.myButton:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
